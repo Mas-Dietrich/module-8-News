@@ -1,0 +1,35 @@
+header, nav, main {
+    max-width: 80rem;
+    margin: auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+header, nav, footer {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+/* Main Content Here */
+div.newsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+
+    span {
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .otherNews, .bigNews { padding: .5rem 2vw;}
+    .otherNews img, .bigNews img { width: 100%;}
+    .bigNews {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+    }
+}
