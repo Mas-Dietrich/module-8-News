@@ -35,3 +35,17 @@ div.newsGrid {
     .otherNews, .bigNews { padding: .5rem 2vw;}
     .otherNews img, .bigNews img { width: 100%;}
 }
+
+
+footer {
+    display: grid;
+
+    div.footerGrid{
+    grid-template-columns: 1fr 1fr;
+
+    .tools {
+        padding-top: .5rem;
+    }
+    }
+
+}

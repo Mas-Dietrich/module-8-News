@@ -200,6 +200,7 @@ div.newsGrid {
 }
 div.newsGrid span {
   font-size: 1rem;
+  font-family: "Spline Sans", sans-serif;
 }
 div.newsGrid .bigNews {
   grid-column: 1/span 2;
@@ -247,7 +248,7 @@ footer a {
 }
 footer div.footerGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 @media only screen and (min-width: 35rem) {
@@ -293,6 +294,15 @@ footer div.footerGrid {
   div.newsGrid .otherNews img, div.newsGrid .bigNews img {
     width: 100%;
   }
+  footer {
+    display: grid;
+  }
+  footer div.footerGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  footer div.footerGrid .tools {
+    padding-top: 0.5rem;
+  }
 }
 @media only screen and (min-width: 64rem) {
   header, nav, main {
@@ -328,5 +338,9 @@ footer div.footerGrid {
   div.newsGrid .bigNews {
     grid-column: 1/span 3;
     grid-row: 1/span 2;
+  }
+  footer div.footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

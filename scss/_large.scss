@@ -33,3 +33,10 @@ div.newsGrid {
         grid-row: 1 / span 2;
     }
 }
+
+footer{
+    div.footerGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
